@@ -3,21 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "next dev && firebase emulators:start",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "emulators": "firebase emulators:start"
   },
   "dependencies": {
     "@types/node": "20.6.4",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.16",
+    "firebase": "^10.4.0",
     "next": "13.5.2",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
   },
@@ -25,7 +28,8 @@
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "sass": "^1.68.0"
   },
   "config": {
     "commitizen": {
